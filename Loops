@@ -1,0 +1,9 @@
+n = int(input())
+#constraint-1<=n,n<=20
+if n>0 and n<21:
+#3--0,1,2--
+    for i in range(0,n):
+        print(i*i)
+else:
+    print("your number is greater than 20")
+    
