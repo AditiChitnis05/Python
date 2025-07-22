@@ -1,0 +1,39 @@
+# Step 1: Start of the program
+if __name__ == '__main__':
+    
+    # Step 2: Read the number of commands to perform
+    N = int(input())
+    
+    # Step 3: Create an empty list to perform operations on
+    my_list = []
+    
+    # Step 4: Loop through each command
+    for _ in range(N):
+        # Step 5: Read the command and split it into parts
+        command = input().strip().split()
+        
+        # Step 6: Check which command is entered and perform accordingly
+        if command[0] == "insert":
+            index = int(command[1])       # position to insert
+            value = int(command[2])       # value to insert
+            my_list.insert(index, value)
+        
+        elif command[0] == "print":
+            print(my_list)
+        
+        elif command[0] == "remove":
+            value = int(command[1])       # value to remove
+            my_list.remove(value)
+        
+        elif command[0] == "append":
+            value = int(command[1])       # value to add at end
+            my_list.append(value)
+        
+        elif command[0] == "sort":
+            my_list.sort()                # sort list in ascending order
+        
+        elif command[0] == "pop":
+            my_list.pop()                 # remove last item
+        
+        elif command[0] == "reverse":
+            my_list.reverse()             # reverse list
