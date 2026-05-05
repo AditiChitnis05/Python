@@ -1,0 +1,36 @@
+'''
+Text: str
+Numeric: int, float, comaplex
+Sequence: list, tuple, range
+Mapping: dict
+Set: Set, Frozen set
+Boolean: bool
+None: NoneType
+'''
+string="aditi"
+integer=5
+floatingnumber=4.3
+complexnumber=56j
+list=["apple", "banana"]
+tuple=("apple", "banama")
+rangesequence=range(5)
+dictionary={"name":"aditi", "age": 21}
+settype={"apple", "banana"}
+frozensettype=({"apple","banana"})
+bolean=True
+NonetYPE=None
+
+print(
+    type(string),
+    type(integer),
+    type(floatingnumber),
+    type(complexnumber),
+    type(list),
+    type(tuple),
+    type(rangesequence),
+    type(dictionary),
+    type(settype),
+    type(frozensettype),
+    type(bolean),
+    type(NonetYPE)
+)
