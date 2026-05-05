@@ -4,5 +4,9 @@
    Dictionary = ordered | changeable | no duplicates'''
 
 thislist = ["apple", "banana", "cherry"]
-thislist.insert(2, "watermelon")
-print(thislist)
+for i in range(len(thislist)):
+  print(thislist[i])
+
+'''thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)'''
