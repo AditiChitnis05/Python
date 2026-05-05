@@ -1,0 +1,8 @@
+'''List = ordered | changeable | allows duplicates
+   Tuple = ordered | unchangeable | allows duplicates
+   Set  = unordered |uncgangeable | no duplicates
+   Dictionary = ordered | changeable | no duplicates'''
+
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(2, "watermelon")
+print(thislist)
