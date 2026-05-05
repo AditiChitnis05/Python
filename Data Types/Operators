@@ -1,0 +1,86 @@
+''' 
+Python has built-in operaators:
+
+1)Arithmatic Operators
+
++	Addition	x + y	
+-	Subtraction	x - y	
+*	Multiplication	x * y	
+/	Division	x / y	
+%	Modulus	x % y	
+**	Exponentiation	x ** y	
+//	Floor division	x // y\
+
+'''
+
+a=9
+b=2
+
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b) #return float
+print(a%b)
+print(a**b)
+print(a//b) #return int
+
+'''
+2)Assignment Operators
+=	x = 5	        x = 5	
++=	x += 3	        x = x + 3	
+-=	x -= 3	        x = x - 3	
+*=	x *= 3	        x = x * 3	
+/=	x /= 3	        x = x / 3	
+%=	x %= 3	        x = x % 3	
+//=	x //= 3	        x = x // 3	
+**=	x **= 3	        x = x ** 3	
+&=	x &= 3	        x = x & 3	
+|=	x |= 3	        x = x | 3	
+^=	x ^= 3	        x = x ^ 3	
+>>=	x >>= 3	        x = x >> 3	
+<<=	x <<= 3	        x = x << 3	
+:=	print(x := 3)	x = 3
+                    print(x)
+
+'''
+a = 10
+b = 2
+
+#a = b
+#print("a = b →", a)
+
+a += b
+print("a += b →", a)
+
+a -= b
+print("a -= b →", a)
+
+a *= b
+print("a *= b →", a)
+
+a /= b
+print("a /= b →", a)
+
+a %= b
+print("a %= b →", a)
+
+a //= b
+print("a //= b →", a)
+
+a **= b
+print("a **= b →", a)
+
+a &= b
+print("a &= b →", a)
+
+a |= b
+print("a |= b →", a)
+
+a ^= b
+print("a ^= b →", a)
+
+a >>= b
+print("a >>= b →", a)
+
+a <<= b
+print("a <<= b →", a)
