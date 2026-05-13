@@ -1,0 +1,12 @@
+#create a class
+class Person:
+    def __init__ (self, name,age):
+        self.name=name
+        self.age=age
+    def identity (self):
+        print("identity", self.name, self.age)
+
+c1=Person("Aditi",21)
+c1.identity()
+print(c1.name)
+print(c1.age)
