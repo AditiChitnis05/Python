@@ -1,36 +1,31 @@
-'''
-Text: str
-Numeric: int, float, comaplex
-Sequence: list, tuple, range
-Mapping: dict
-Set: Set, Frozen set
-Boolean: bool
-None: NoneType
-'''
-string="aditi"
-integer=5
-floatingnumber=4.3
-complexnumber=56j
-list=["apple", "banana"]
-tuple=("apple", "banama")
-rangesequence=range(5)
-dictionary={"name":"aditi", "age": 21}
-settype={"apple", "banana"}
-frozensettype=({"apple","banana"})
-bolean=True
-NonetYPE=None
+class Employee:
+    def __init__(self, name, salary):
+        self.name=name
+        self.salary=salary
 
-print(
-    type(string),
-    type(integer),
-    type(floatingnumber),
-    type(complexnumber),
-    type(list),
-    type(tuple),
-    type(rangesequence),
-    type(dictionary),
-    type(settype),
-    type(frozensettype),
-    type(bolean),
-    type(NonetYPE)
-)
+    def display(self):
+        print(self.name, self.salary)
+
+
+class Developer(Employee):
+    def __init__(self, name, salary, language):
+        super().__init__(name, salary)
+        self.language=language
+    def code(self):
+        print(self.name, "writes", self.language, "code")
+
+
+class Manager(Employee):
+    def __init__(self, name, salary, team_size):
+        super().__init__(name, salary)
+        self.team_size=team_size
+    def manage(self):
+        print(self.name, "manages", self.team_size, "people")
+
+d1=Developer("Aditi", 7000000, "Python")
+d1.display()
+d1.code()
+
+d2= Manager("Aditya", 70000000, 100)
+d2.display()
+d2.manage()
