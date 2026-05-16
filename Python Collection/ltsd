@@ -1,12 +1,44 @@
 '''List = ordered | changeable | allows duplicates
    Tuple = ordered | unchangeable | allows duplicates
    Set  = unordered |uncgangeable | no duplicates
-   Dictionary = ordered | changeable | no duplicates'''
+   Dictionary = ordered | changeable | no duplicates
+  Array = ordered | same data type | import needed
+  string = orderes | immutable | yes
 
 thislist = ["apple", "banana", "cherry"]
 for i in range(len(thislist)):
   print(thislist[i])
 
-'''thislist = ["apple", "banana", "cherry"]
+thislist = ["apple", "banana", "cherry"]
 for x in thislist:
-  print(x)'''
+  print(x)
+
+Find the second largest number:         #
+
+'''
+#cannot withdraw more than balance
+#balance should stay private
+
+class Account:
+    def __init__(self,balance):
+        self.__balance=balance
+
+    def deposit(self, amount):
+        self.amount=amount
+        self.__balance+=amount
+        print("Deposit amount is", amount, "Account balance is now: ", self.__balance)
+
+    def withdraw(self,amount):
+        self.amount=amount
+        if amount>self.__balance:
+            print("insufficient balance")
+        else:
+            self.__balance-=amount
+        print("Withrawal amount is", amount)
+    def show_balance(self):
+        print("Account balance is",self.__balance)
+
+d1=Account(100)
+d1.deposit(50)
+d1.withdraw(100)
+d1.show_balance()
